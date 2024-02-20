@@ -1,0 +1,10 @@
+.countNumberCart {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212529;
+}
+.pro-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

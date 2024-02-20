@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.svg_user a svg {
+  margin-top: -10px !important;
+}
+
+.svg_user {
+  margin-right: 20px !important;
+}
+
+/* #basic_currentPassword,
+#basic_newPassword,
+#basic_confirmPassword {
+  height: 0 !important;
+} */
+.ant-input-affix-wrapper.ant-input-password .ant-input,
+.ant-input-affix-wrapper.ant-input-password .ant-input-prefix,
+.ant-input-affix-wrapper.ant-input-password .ant-input-suffix {
+  height: 30px !important;
+}
+
+/* PRODUCT ADD PAGE ADMIN */
+
+form input.ant-input,
+form .ant-input-password,
+form textarea {
+  height: auto;
+  border-radius: 7px;
+}
+
+.detail_product .ant-radio {
+  display: none;
+  padding: 3px 5px;
+  border: 1px solid gainsboro;
+}
+
+.detail_product span {
+  line-height: 30px;
+  margin: 0px 5px;
+}
+
+.detail_product .ant-radio-wrapper-checked span{
+  color: #ca1515;
+  width: max-content;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #95532d;
+  border-radius: 3px;
+}
+
+.detail_product .ant-form-item-control-input-content button{
+  border: 1px solid #ca1515;
+  margin: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.detail_product .ant-row {
+  flex-wrap: wrap;
+}
+
+.detail_product .ant-form-item-control-input-content button:hover {
+  background-color: transparent;
+}
+
+.detail_product .ant-form-item-control-input-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail_product .ant-form-item-control-input-content button:nth-child(1){
+  color:  #ca1515;
+  font-weight: 700;
+}
+
+.detail_product .ant-form-item-control-input-content button:nth-child(2){
+  background-color: #ca1515;
+}
+
+.ant-col-4 label {
+  font-weight: 700;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: white;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background-color: white;
+}
+
+.ant-btn:not(:disabled):focus-visible {
+  outline: none;
+}
+
+[ant-click-animating-without-extra-node="true"]::after,
+.ant-click-animating-node {
+  box-shadow: none;
+  --antd-wave-shadow-color: rgb(202 21 21 / 0%) !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > td {
+  background: white;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background: white;
+}
+
+.ant-btn-default {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.ant-btn-default:not(:disabled):hover{
+  color: #ca1515;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-wrapper .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: white;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background: white;
+}
+
+form input.ant-input,
+form .ant-input-password,
+form textarea {
+  border-radius: 5px;
+  padding: 7px 0px 7px 20px;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+}
+
+.checkout form p {
+  margin: 10px 0px;
+}
+
+.product__item__text .nameProduct{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product__item__text .product__price{
+  color: #ca1515;
+}
+
+.breadcrumb__links a:after{
+  content: "|"
+}

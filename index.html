@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/image/unnamed (7).png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPF Shop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="./src/pages/user/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/jquery-ui.min.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="./src/pages/user/css/style.css" type="text/css">
+
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  
+  <!-- Js Plugins -->
+  <script src="./src/pages/user/js/main.js"></script>
+  <script src="./src/pages/user/js/bootstrap.min.js"></script>
+  <script src="./src/pages/user/js/jquery-3.3.1.min.js"></script>
+  <script src="./src/pages/user/js/jquery-ui.min.js"></script>
+  <script src="./src/pages/user/js/jquery.countdown.min.js"></script>
+  <script src="./src/pages/user/js/jquery.magnific-popup.min.js"></script>
+  <script src="./src/pages/user/js/jquery.nicescroll.min.js"></script>
+  <script src="./src/pages/user/js/jquery.slicknav.js"></script>
+  <script src="./src/pages/user/js/mixitup.min.js"></script>
+  <script src="./src/pages/user/js/owl.carousel.min.js"></script>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const thumbs = document.querySelectorAll('.thumb');
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        slider.style.transform = `translateX(-${thumb.dataset.index * 100}%)`;
+        thumbs.forEach(thumb => thumb.classList.remove('active'));
+        thumb.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html> 
